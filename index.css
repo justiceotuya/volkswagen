@@ -11,7 +11,8 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 5vw 5vw;
+    margin: 0 5vw 2vw;
+    font-weight: bold;
 }
 
 #nav__left {
@@ -28,13 +29,53 @@ a {
     color: black;
 }
 
+a:hover {
+    color: #F0B977;
+}
+
 #nav__center li {
     margin: -0.7em 2em;
 }
 
 #nav__search {
-    width: 15px;
+    /* width: 15px; */
     margin: 5px;
+    display: inline;
+    /* flex-direction: row; */
+}
+
+#nav__search--input {
+    display: inline;
+    /* width: 12%; */
+    /* height: 12%; */
+}
+
+#nav__search--button {
+    display: inline;
+    /* width: 12%; */
+    /* height: 12%; */
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: inline !important;
+}
+
+#search-icon {
+    width: 20px;
+    margin-top: -60px;
+}
+
+#nav__search img {
+    display: inline;
+    width: 4%;
+}
+
+#nav__search img:hover {
+    transform: scale(2)
 }
 
 #nav__right {
@@ -43,67 +84,66 @@ a {
 
 main {
     display: flex;
-    /* height: 90%; */
 }
 
 #main__section1 {
+    font-family: Playfair Display;
     width: 12%;
-    height: 2px;
-    /* border: 1px solid black; */
+    height: 1vw;
+    font-size: 4vw;
     display: flex;
     flex-direction: row;
-    transform: rotate(90deg);
-    margin-top: 20%;
+    transform: rotate(270deg);
+    margin-right: 2%;
+    position: relative;
+    top: 35.7vw;
 }
 
-#main__section1 hr {
-    width: 12%;
-    /* border-bottom: 2px solid black; */
-    background-color: transparent;
+#main__section1>img {
+    height: 4vw;
+    margin: 1vw 1vw;
 }
 
 #main__section2 {
     width: 28%;
-    /* border: 1px solid black; */
 }
 
 #main__section2 img {
     width: 100%;
-    /* height: 80%; */
+    /* position: relative; */
 }
 
 #main__section3 {
     width: 46%;
-    /* border: 1px solid black */
     height: 80%;
 }
 
 #main__section3--title {
     width: 46%;
     font-family: Playfair Display;
-    /* height: 80%; */
-    margin: 10vh 20vh;
-    font-size: 15vh;
+    margin: 2vw 10vw;
+    font-size: 5vw;
 }
 
 #main__section3--content {
-    margin: 10vh 20vh;
-    font-size: 10px;
+    margin: 5vw 10vw;
+    font-size: 15px;
     line-height: 200%;
     color: #A1A1A1;
 }
 
 #main__section4 {
     width: 12%;
-    height: 2px;
+    height: 1vw;
     /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 20%;
-    transform: rotate(90deg)
+    transform: rotate(270deg);
+    font-weight: bold;
 }
 
 #main__section4 div {
-    margin: 0 10px;
+    margin: 0 2vw;
 }
