@@ -61,21 +61,13 @@ a:hover {
 }
 
 .show {
-    display: inline !important;
+    display: block !important;
 }
 
 #search-icon {
     width: 20px;
     margin-top: -60px;
-}
-
-#nav__search img {
-    display: inline;
-    width: 4%;
-}
-
-#nav__search img:hover {
-    transform: scale(2)
+    cursor: pointer;
 }
 
 #nav__right {
@@ -127,7 +119,7 @@ main {
 
 #main__section3--content {
     margin: 5vw 10vw;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 200%;
     color: #A1A1A1;
 }
