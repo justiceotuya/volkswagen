@@ -1,86 +1,54 @@
-html {
-    height: 100%;
-}
-
-body {
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+img {
+    width: 100%;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 5vw 2vw;
+    margin-bottom: 2vw;
+}
+
+#nav__logo,
+#nav__menu {
     font-weight: bold;
 }
 
-#nav__left {
-    font-size: 1.4em;
+#main__year>hr,
+#main__year>p {
+    transform: rotate(270deg);
+    position: relative;
+    top: 80%;
+    font-size: 50px;
 }
 
-#nav__center ul {
+#footer {
+    background-color: #000;
+    color: white;
+    padding: 2.5vw;
+}
+
+@media screen and (max-width:565px) {
+    #footer-scroll {
+        text-align: center;
+    }
+}
+
+.share {
+    height: 1vw;
     display: flex;
-    list-style: none;
+    flex-direction: row;
+    margin-top: 23vw;
+    padding-top: 2vw;
+    text-align: right;
+    transform: rotate(270deg);
+    font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: #F0B977;
-}
-
-#nav__center li {
-    margin: -0.7em 2em;
-}
-
-#nav__search {
-    /* width: 15px; */
-    margin: 5px;
-    display: inline;
-    /* flex-direction: row; */
-}
-
-#nav__search--input {
-    display: inline;
-    /* width: 12%; */
-    /* height: 12%; */
-}
-
-#nav__search--button {
-    display: inline;
-    /* width: 12%; */
-    /* height: 12%; */
-}
-
-.hide {
-    display: none !important;
-}
-
-.show {
-    display: block !important;
-}
-
-#search-icon {
-    width: 20px;
-    margin-top: -60px;
-    cursor: pointer;
-}
-
-#nav__right {
-    margin-top: 5px;
-}
-
-main {
-    display: flex;
+.share div {
+    margin: 0 2vw;
 }
 
 #main__section1 {
     font-family: Playfair Display;
-    width: 12%;
+    width: 50%;
     height: 1vw;
     font-size: 4vw;
     display: flex;
@@ -88,7 +56,7 @@ main {
     transform: rotate(270deg);
     margin-right: 2%;
     position: relative;
-    top: 35.7vw;
+    top: 100%;
 }
 
 #main__section1>img {
@@ -96,76 +64,121 @@ main {
     margin: 1vw 1vw;
 }
 
-#main__section2 {
-    width: 28%;
-}
-
-#main__section2 img {
-    width: 100%;
-    /* position: relative; */
-}
-
-#main__section3 {
-    width: 46%;
-    height: 80%;
-}
-
-#main__section3--title {
+.title {
     width: 46%;
     font-family: Playfair Display;
     margin: 2vw 10vw;
-    font-size: 5vw;
+    font-size: 46px;
 }
 
-#main__section3--content {
+.content {
     margin: 5vw 10vw;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 200%;
     color: #A1A1A1;
 }
 
-#main__section4 {
-    width: 12%;
-    height: 1vw;
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 20%;
-    transform: rotate(270deg);
-    font-weight: bold;
+#progress>img {
+    width: 10%;
 }
 
-#main__section4 div {
-    margin: 0 2vw;
+a {
+    text-decoration: none !important;
+    color: black;
 }
 
-#nav__search--button {
-    background-color: black;
-    color: white;
-    border: 0;
-    font-weight: 600;
-    padding: 3px;
+a:hover {
+    color: #F0B977;
 }
 
-#nav__search--button :hover {
-    background-color: #F0B977;
+.scroll-angle {
+    font-size: 40px;
 }
 
-#nav__search--input {
-    padding: 1px;
+.next,
+.prev {
+    display: inline;
+    cursor: pointer;
 }
 
-footer {
-    width: 80%;
-    background: black;
+.next:hover,
+.prev:hover {
+    color: #F0B977;
 }
 
-#footer-scroll {
-    margin-top: -100px;
-    width: 30%;
-    background: #333333;
-    float: right;
-    color: white;
-    height: 10vh;
+.show {
+    display: block;
+    transition: ease-in;
+    transform
+}
+
+.hide {
+    display: none;
+    transition: ease-in;
+}
+
+@media screen and (min-width:576px) and (max-width:1022px) {
+    .vehicle-image>img {
+        height: 100%;
+        width: 200%;
+    }
+    .text {
+        padding-left: 20%;
+    }
+    .title,
+    .content {
+        margin: 5vw;
+    }
+    .share {
+        margin-top: 45vw;
+    }
+    #classic-car {
+        margin-left: -5vw;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #nav__logo {
+        font-size: 7vw;
+    }
+    nav {
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    #main__section1 {
+        font-family: Playfair Display;
+        text-align: right;
+        width: 100%;
+        height: 3vh;
+        color: #F0B977;
+        font-weight: bold;
+        font-size: 20vw;
+        text-shadow: 1px 1px 2px #000;
+        transform: rotate(0deg);
+        position: static;
+    }
+    #main__section1>img {
+        display: none;
+    }
+    .vehicle-image {
+        position: static;
+    }
+    .title {
+        font-weight: bold;
+    }
+    .share {
+        font-family: Playfair Display;
+        width: 100%;
+        height: 10vh;
+        transform: rotate(0deg);
+        position: static;
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        text-align: center;
+        font-weight: bold;
+    }
+    .share div {
+        margin: 0 auto;
+    }
 }

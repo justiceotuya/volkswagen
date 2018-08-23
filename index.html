@@ -5,102 +5,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jsonresume-theme-slick@0.1.16/style.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="style/bootstrap.css">
     <link rel="stylesheet" href="style/index.css">
     <title>Volkswagen</title>
 </head>
 
 <body>
-    <nav>
-        <div id="nav__left">
-            <a href="#">
-                Classic.
-            </a>
-        </div>
-        <div id="nav__center">
-            <ul>
-                <li>
-                    <a href="#">Classic Cars</a>
-                </li>
-                <li>
-                    <a href="#">Category</a>
-                </li>
-            </ul>
 
-        </div>
-        <div id="nav__search">
-            <!-- <div id="search-group" class="hide"> -->
-            <div id="search-group" class="hide">
-                <input type="text" name="text" id="nav__search--input">
-                <input type="submit" value="Search" id="nav__search--button">
+    <nav class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4" id="nav__logo">
+                <a href="#">
+                    Classic
+                </a>
             </div>
-        </div>
-        <img src="./images/search.svg" alt="search icon" id="search-icon" onclick="toggle()" class="show">
-        <div id="nav__right">
-            <a href="#">
-                Menu
-            </a>
+            <div class="col-sm-2">
+                <a href="#" id="classic-car">
+                    classic cars
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="#">
+                    category
+                </a>
+            </div>
+            <div class="col-sm-2">
+                search
+            </div>
+            <div class="col-sm-1" id="nav__menu">
+                <a href="#">
+                    Menu
+                </a>
+            </div>
         </div>
     </nav>
 
-    <main>
-        <div id="main__section1">
-            <!-- <div id="main__section1__line1"></div> -->
-            <img src="./images/straight-horizontal-line.svg" alt="horizontal line"> 1965
-            <!-- <div id="main__section1__line2"></div> -->
-            <img src="./images/straight-horizontal-line.svg" alt="horizontal line">
-        </div>
+    <!-- 1st Volkswagen -->
+    <div id="volkswagen" class="show">
+        <main class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1" id="main__year">
 
+                    <div id="main__section1">
 
-        <div id="main__section2" class="image-scroll">
-            <div>
-                <img src="./images/volkswagen.jpg">
-            </div>
-            <div>
-                <img src="./images/volkswagen1.jpg">
-            </div>
-            <div>
-                <img src="./images/volkswagen3.jpg">
-            </div>
-            <div>
-                <img src="./images/volkswagen2.jpg">
-            </div>
-            <div>
-                <img src="./images/volkswagen4.jpg">
-            </div>
-        </div>
-        <div id="main__section3">
-            <div id="main__section3--title">
-                Volkswagen Beetle
-            </div>
-            <div id="main__section3--content">
-                For the first time in a long time, the 1965 Volkswagen Beetle actually looked a little different than its predecessors. That
-                was due primarily to the fact that VW enlarged the Beetle's windows and windshield, which helped improve
-                outward visibility for drivers and passengers
+                        <img src="./images/straight-horizontal-line.svg" alt="horizontal line"> 1965
 
+                        <img src="./images/straight-horizontal-line.svg" alt="horizontal line">
+                    </div>
+                </div>
+                <div class="col-sm-3 vehicle-image">
+                    <img src="./images/volkswagen.jpg" alt="Volkswagen image">
+                </div>
+                <div class="col-sm-7 text">
+                    <h1 class="title">Volkswagen Beetle</h1>
+                    <p class="content">For a first time in a long time the 1965 volskwagen beetle actually looked a little different than its
+                        predecessors, that was due primarily to the fact that VW enlarged the beetles windows and windsheild,
+                        which helped increse outward visibility for drivers and passengers</p>
+                </div>
+                <div class="col-sm-1 share">
+                    <div class="share-fbook">
+                        <a href="#">facebook</a>
+                    </div>
+                    <div class="share--instagram">
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
             </div>
 
-        </div>
-        <div id="main__section4">
-            <div id="main__section4--facebook">
-                <a href="#">facebook</a>
+        </main>
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="offset-sm-6 col-sm-4" id="footer">
+                    <div class="row" id="footer-scroll">
+                        <div class="col-5">
+                            Scroll right
+                        </div>
+                        <div class="col-7" id="progress">
+                            01
+                            <img src="./images/straight-horizontal-line-white.png" alt="horizontal line"> 05
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 scroll-angle text-center">
+                    <div class="prev">
+                        &lt;
+                    </div>
+                    <div class="next">
+                        &gt;
+                    </div>
+                </div>
             </div>
-            <div id="main__section4--instagram">
-                <a href="#">Instagram</a>
-            </div>
-        </div>
+        </footer>
+    </div>
 
-    </main>
-    <!-- <footer>
-        <div id="footer-scroll">
-            <p>gsgsgsgjdhshdhshdhhdgdggfdgdgeg</p>
-        </div>
-    </footer> -->
-    <script src="./script/vibrant.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- 2nd Volvo -->
+    <div id="volvo" class="hide">
+        <main class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1" id="main__year">
+
+                    <div id="main__section1">
+
+                        <img src="./images/straight-horizontal-line.svg" alt="horizontal line"> 1980
+
+                        <img src="./images/straight-horizontal-line.svg" alt="horizontal line">
+                    </div>
+                </div>
+                <div class="col-sm-3 vehicle-image">
+                    <img src="./images/volkswagen1.jpg" alt="Volkswagen image">
+                </div>
+                <div class="col-sm-7 text">
+                    <h1 class="title">Volvo</h1>
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nobis exercitationem rerum facilis
+                        beatae tenetur modi at aspernatur itaque saepe. Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Sed repudiandae reprehenderit facilis blanditiis voluptate nihil ullam accusantium voluptates
+                        totam, suscipit odit ut necessitatibus maiores quisquam ipsam iusto natus ratione praesentium.</p>
+                </div>
+                <div class="col-sm-1 share">
+                    <div class="share-fbook">
+                        <a href="#">facebook</a>
+                    </div>
+                    <div class="share--instagram">
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="offset-sm-6 col-sm-4" id="footer">
+                    <div class="row" id="footer-scroll">
+                        <div class="col-5">
+                            Scroll right
+                        </div>
+                        <div class="col-7" id="progress">
+                            02
+                            <img src="./images/straight-horizontal-line-white.png" alt="horizontal line"> 05
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 scroll-angle text-center">
+                    <div class="prev">
+                        &lt;
+                    </div>
+                    <div class="next">
+                        &gt;
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./script/jquery.min.js"></script>
+    <script src="./script/bootstrap.min.js"></script>
     <script src="./script/index.js"></script>
 </body>
 
